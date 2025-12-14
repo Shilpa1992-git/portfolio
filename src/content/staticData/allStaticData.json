@@ -1,0 +1,37 @@
+{
+  "profileImage": "/images/efeeleprofile.webp",
+  "profileAlt": "Photo of Shilpa Salunkhe, DevOps Engineer",
+  "profileLink": "/about-me",
+  "profileTitle": "DevOps Engineer",
+  "profileName": "Shilpa Salunkhe",
+  "github": "https://github.com/shilpa1992-git",
+  "githubText": "Do you like this portfolio's design?",
+  "portfolioImage": "/images/portfolio.webp",
+  "email": "shilpasalunkhe26@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/shilpasalunkhe-4875a9288/",
+  "twitter": "",
+  "alias": "Shilpa Salunkhe",
+  "contactSectionTitle": "Ready to automate and scale?",
+  "contactSectionSubtitle": "Let's build together.",
+  "contactSectionButtonText": "Contact Me",
+  "contactSectionButtonIcon": "paperplane",
+  "techsTitle": "TECHS",
+  "githubIconName": "github",
+  "linkedinIconName": "linkedin",
+  "twitterIconName": "twitter",
+  "emailIconName": "envelope",
+  "hobbies": [
+    "Learning",
+    "Building",
+    "Automation",
+    "Cloud Computing",
+    "Open Source",
+    "DevOps Tools"
+  ],
+  "pageTitle": "Shilpa Salunkhe | DevOps Engineer | Cloud & Automation",
+  "pageDescription": "DevOps Engineer passionate about Cloud, Automation, CI/CD, and Modern DevOps tools. Currently learning Docker, Kubernetes, Linux, ArgoCD, Helm, Jenkins, Prometheus, Grafana and more.",
+  "OGImage": {
+    "url": "/images/imagedefault.webp",
+    "alt": "Screenshot of a web portfolio with a modern and dark design. Featuring Shilpa Salunkhe, a DevOps Engineer passionate about Cloud, Automation, CI/CD, and Modern DevOps tools. Includes contact sections, projects, and a technology stack with technologies like Docker, Kubernetes, Jenkins, Linux, ArgoCD, Helm, Prometheus, Grafana, and more."
+  }
+}

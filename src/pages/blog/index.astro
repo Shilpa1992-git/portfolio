@@ -1,0 +1,22 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/blog/Hero.astro";
+import Tags from "../../components/blog/Tags.astro";
+import ListPosts from "../../components/blog/ListPosts.astro";
+const pageTitle = "DevOps Engineering Blog | Shilpa Salunkhe";
+const description = "Welcome to my DevOps blog, where I share my learning journey about Docker, Kubernetes, Jenkins, CI/CD, and modern DevOps tools.";
+const ogimage ={
+    url: "/images/blogimage.webp",
+    alt: "DevOps Engineering Blog by Shilpa Salunkhe - Docker, Kubernetes, Jenkins, CI/CD, and Modern DevOps Tools"
+};
+---
+
+<Layout  pageTitle={pageTitle} description={description} ogimage={ogimage}>
+   
+    <Hero />
+    <Tags />
+    <div class="px-8 max-sm:px-4">
+        <ListPosts />
+    </div>
+
+</Layout>
