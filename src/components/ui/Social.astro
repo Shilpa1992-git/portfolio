@@ -1,0 +1,27 @@
+---
+import TechIcon from "./TechIcon.astro"
+
+interface Props {
+    iconName: string;
+    link: string;
+    label?: string;
+}
+
+const { iconName, link, label = `Link to ${iconName}` } = Astro.props;
+
+// Skip rendering if link is empty
+if (!iconName || !link || link === "") {
+    return null;
+}
+---
+
+<a 
+    class="hover:opacity-80 hover:scale-110 transition-all inline-flex items-center justify-center" 
+    target="_blank" 
+    href={link}
+    rel="noopener noreferrer"
+    aria-label={label}
+    style="min-width: 24px; min-height: 24px;"
+>
+    <TechIcon name={iconName} class="w-6 h-6 block" />
+</a>

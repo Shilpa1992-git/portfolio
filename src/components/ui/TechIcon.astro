@@ -1,0 +1,80 @@
+---
+interface Props {
+  name: string;
+  class?: string;
+}
+
+const { name, class: className = "" } = Astro.props;
+
+// Map icon names to FontAwesome CSS classes
+const iconMap: Record<string, { faClass: string; type: 'fab' | 'fas' | 'far' }> = {
+  // Social Media (Brands) - FontAwesome
+  github: { faClass: 'fa-github', type: 'fab' },
+  linkedin: { faClass: 'fa-linkedin', type: 'fab' },
+  twitter: { faClass: 'fa-x-twitter', type: 'fab' },
+  x: { faClass: 'fa-x-twitter', type: 'fab' },
+  
+  // Tech Stack (Brands) - FontAwesome
+  docker: { faClass: 'fa-docker', type: 'fab' },
+  aws: { faClass: 'fa-aws', type: 'fab' },
+  python: { faClass: 'fa-python', type: 'fab' },
+  git: { faClass: 'fa-git-alt', type: 'fab' },
+  html: { faClass: 'fa-html5', type: 'fab' },
+  css: { faClass: 'fa-css3-alt', type: 'fab' },
+  javascript: { faClass: 'fa-js', type: 'fab' },
+  node: { faClass: 'fa-node-js', type: 'fab' },
+  react: { faClass: 'fa-react', type: 'fab' },
+  angular: { faClass: 'fa-angular', type: 'fab' },
+  bootstrap: { faClass: 'fa-bootstrap', type: 'fab' },
+  sass: { faClass: 'fa-sass', type: 'fab' },
+  php: { faClass: 'fa-php', type: 'fab' },
+  wordpress: { faClass: 'fa-wordpress', type: 'fab' },
+  gatsby: { faClass: 'fa-gatsby', type: 'fab' },
+  figma: { faClass: 'fa-figma', type: 'fab' },
+  firebase: { faClass: 'fa-firebase', type: 'fab' },
+  mongodb: { faClass: 'fa-mongodb', type: 'fab' },
+  mongo: { faClass: 'fa-mongodb', type: 'fab' },
+  mysql: { faClass: 'fa-mysql', type: 'fab' },
+  linux: { faClass: 'fa-linux', type: 'fab' },
+  
+  // Regular Icons - FontAwesome
+  envelope: { faClass: 'fa-envelope', type: 'fas' },
+};
+
+const iconInfo = iconMap[name.toLowerCase()] || null;
+
+// Devicons mapping for icons not in FontAwesome
+const deviconMap: Record<string, string> = {
+  kubernetes: 'kubernetes',
+  jenkins: 'jenkins',
+  helm: 'helm',
+  argocd: 'argocd',
+  prometheus: 'prometheus',
+  grafana: 'grafana',
+  typescript: 'typescript',
+  tailwind: 'tailwindcss',
+  astro: 'astro',
+  cloudflare: 'cloudflare',
+  vercel: 'vercel',
+  netlify: 'netlify',
+  markdown: 'markdown',
+};
+
+// Determine if we should use FontAwesome or devicons
+const useFontAwesome = iconInfo !== null;
+const deviconName = deviconMap[name.toLowerCase()] || name.toLowerCase();
+const iconUrl = useFontAwesome 
+  ? null 
+  : `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${deviconName}/${deviconName}-original.svg`;
+---
+
+{useFontAwesome ? (
+  <i class={`${iconInfo.type} ${iconInfo.faClass} ${className} tech-icon-fa`} aria-hidden="true"></i>
+) : (
+  <img 
+    src={iconUrl}
+    alt={`${name} icon`}
+    class={`${className} tech-icon-svg`}
+    loading="lazy"
+  />
+)}
