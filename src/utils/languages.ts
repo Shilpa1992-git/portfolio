@@ -146,6 +146,10 @@ export const languages: Record<string, Language> = {
     name: "AWS",
     iconName: "aws",
   },
+  terraform: {
+    name: "Terraform",
+    iconName: "terraform",
+  },
 };
 
 export const getLanguage = (lang: string): Language => {

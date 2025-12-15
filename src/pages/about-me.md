@@ -8,7 +8,7 @@ image:
   alt: "Photo of Shilpa Salunkhe, DevOps Engineer"
 ---
 
-Hi! I'm **Shilpa Salunkhe**, a passionate DevOps Engineer currently pursuing DevOps Engineering at **Manipal University**. I'm on an exciting journey to master modern DevOps tools and practices, building the future one automation at a time.
+Hi! I'm **Shilpa Salunkhe**. I have completed my **BCA degree** from **Manipal University** and started my career as a **DevOps and AWS Engineer**. I'm on an exciting journey to master modern DevOps tools and practices, building the future one automation at a time.
 
 ## My DevOps Journey 🚀
 
