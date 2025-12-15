@@ -4,7 +4,7 @@ title: "Shilpa Salunkhe | DevOps Engineer | My Journey in Cloud & Automation �
 description: "DevOps Engineer passionate about Cloud, Automation, CI/CD, and Modern DevOps tools. Currently learning Docker, Kubernetes, Linux, ArgoCD, Helm, Jenkins, Prometheus, Grafana and building amazing things every day. 🚀☁️"
 author: "Shilpa Salunkhe"
 image:
-  url: "/images/efeeleprofile.webp"
+  url: "/images/shilpa-profile.jpg"
   alt: "Photo of Shilpa Salunkhe, DevOps Engineer"
 ---
 
